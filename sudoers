@@ -1,0 +1,2 @@
+# remove sudo password check:
+avi ALL=(ALL) NOPASSWD: ALL
