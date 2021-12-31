@@ -9,5 +9,5 @@ if [[ ${#token} -ne 32 ]] ; then
   exit 255
 fi
 url="rest/vcenter/datacenter"
-raw_dcs=$(curl -k -s -X GET "https://$1/${url}" -H "vmware-api-session-id:${token}" -H "Content-Type: application/json" | jq '.value | map(del(.datacenter)) | map([.name]) | add')
+raw_dcs=$(curl -k -s -X GET "https://$1/${url}" -H "vmware-api-session-id:${token}" -H "Content-Type: application/json" | jq '.value | map(del(.datacenter))')
 echo $raw_dcs
