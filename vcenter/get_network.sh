@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "$#" -ne 4 ]; then
+if [ "$#" -ne 3 ]; then
     echo "Illegal number of parameters"
     exit 255
 fi
