@@ -7,5 +7,5 @@ echo "four" | tee -a test.txt
 echo "----"
 cat test.txt
 echo "----"
-sed -i -e "s/four/\"$TF_VAR_toto\"/g" test.txt
+sed -i -e "s/four/$TF_VAR_toto/g" test.txt
 cat test.txt
