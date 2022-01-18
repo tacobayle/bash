@@ -1,0 +1,21 @@
+{
+  "vcenter_dc": "",
+  "vcenter_cluster": "",
+  "vcenter_datastore": "",
+  "vcenter_network_mgmt_name": "",
+  "dhcp": "",
+  "vcenter_network_vip_name": "",
+  "vcenter_network_vip_cidr": "",
+  "vcenter_network_vip_ip4_addresses": "",
+  "vcenter_network_vip_ipam_pool": "",
+  "vcenter_network_k8s_name": "",
+  "vcenter_network_k8s_cidr": "",
+  "vcenter_network_k8s_ip4_addresses": "",
+  "vcenter_network_k8s_ipam_pool": "",
+  "avi_domain": "",
+  "K8s_cni_name": "",
+  "ako_service_type": "",
+  "ako_version": "",
+  "avi_version": "",
+  "avi_controller_url": ""
+}

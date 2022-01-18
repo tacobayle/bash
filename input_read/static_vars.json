@@ -1,0 +1,7 @@
+{
+  "vcenter_network_mgmt_network_cidr": "",
+  "vcenter_network_mgmt_ip4_addresses": "",
+  "vcenter_network_mgmt_gateway4": "",
+  "vcenter_network_mgmt_network_dns": "",
+  "vcenter_network_mgmt_ipam_pool": "",
+}
