@@ -1,0 +1,422 @@
+{
+  "vcenter_underlay": {
+    "dc": "sof2-01-vc08",
+    "cluster": "sof2-01-vc08c01",
+    "datastore": "sof2-01-vc08c01-vsan",
+    "resource_pool": "sof2-01-vc08c01/Resources",
+    "folder": "nicNestedNsx",
+    "server": "sof2-01-vc08.oc.vmware.com",
+    "cl": {
+      "name": "ubuntu",
+      "file": "/home/ubuntu/bin/bionic-server-cloudimg-amd64.ova",
+      "file_external_gw": "/home/ubuntu/bin/focal-server-cloudimg-amd64.ova"
+    },
+    "networks": {
+      "management": {
+        "name": "vxw-dvs-34-virtualwire-3-sid-1080002-sof2-01-vc08-avi-mgmt"
+      },
+      "vmotion": {
+        "name": "vxw-dvs-34-virtualwire-120-sid-1080119-sof2-01-vc08-avi-dev116"
+      },
+      "vsan": {
+        "name": "vxw-dvs-34-virtualwire-119-sid-1080118-sof2-01-vc08-avi-dev115"
+      }
+    },
+    "network": {
+      "name": "vxw-dvs-34-virtualwire-3-sid-1080002-sof2-01-vc08-avi-mgmt"
+      },
+    "network_avi_mgmt": {
+      "name": "vxw-dvs-34-virtualwire-121-sid-1080120-sof2-01-vc08-avi-dev117"
+      },
+    "network_avi_vip": {
+      "name": "vxw-dvs-34-virtualwire-122-sid-1080121-sof2-01-vc08-avi-dev118"
+      },
+    "network_avi_backend": {
+      "name": "vxw-dvs-34-virtualwire-123-sid-1080122-sof2-01-vc08-avi-dev119"
+      },
+    "network_nsx_overlay": {
+      "name": "vxw-dvs-34-virtualwire-124-sid-1080123-sof2-01-vc08-avi-dev120"
+      },
+    "network_nsx_external": {
+      "name": "vxw-dvs-34-virtualwire-125-sid-1080124-sof2-01-vc08-avi-dev121"
+    }
+    },
+  "dns": {
+    "nameserver": "10.41.134.134",
+    "domain": "mydomain.com"
+  },
+  "ntp": {
+    "server": "10.23.108.1",
+    "timezone": "Europe/Zurich"
+  },
+  "esxi": {
+    "count": 3,
+    "iso_source_location": "/home/ubuntu/bin/VMware-VMvisor-Installer-7.0U2a-17867351.x86_64.iso",
+    "iso_location": "/tmp/esxi",
+    "boot_cfg_location": "efi/boot/boot.cfg",
+    "boot_cfg_lines": ["kernelopt=runweasel ks=cdrom:/KS_CUST.CFG"],
+    "bios": "efi",
+    "guest_id": "vmkernel65Guest",
+    "keyboard_type": "US Default",
+    "basename": "esxi-0",
+    "cpu": 24,
+    "memory": 131072,
+    "disks": [
+      {
+        "size": 32,
+        "label": "disk0",
+        "unit_number": 0,
+        "thin_provisioned": true
+      },
+      {
+        "size": 64,
+        "label": "disk1",
+        "unit_number": 1,
+        "thin_provisioned": true
+      },
+      {
+        "size": 448,
+        "label": "disk2",
+        "unit_number": 2,
+        "thin_provisioned": true
+      }
+    ],
+    "wait_for_guest_net_timeout": 0,
+    "nested_hv_enabled": "true"
+  },
+  "dns_ntp": {
+    "create": true,
+    "dns": "10.23.108.1, 10.16.142.111",
+    "name": "dns_ntp",
+    "cpu": 2,
+    "memory": 4096,
+    "disk": 20,
+    "public_key_path": "~/.ssh/cloudKey.pub",
+    "private_key_path": "~/.ssh/cloudKey",
+    "wait_for_guest_net_timeout": 2,
+    "username": "ubuntu",
+    "netplanFile": "/etc/netplan/50-cloud-init.yaml",
+    "bind": {
+      "keyName": "myKeyName",
+      "forwarders": "10.23.108.1; 10.23.108.2; 10.16.142.111",
+      "reverse": "134.41.10"
+    },
+    "ntp": "time.vmware.com,pool.ntp.org"
+  },
+  "external_gw": {
+    "create": true,
+    "dns": "10.23.108.1, 10.16.142.111",
+    "name": "external_gw",
+    "cpu": 2,
+    "memory": 4096,
+    "disk": 20,
+    "public_key_path": "~/.ssh/cloudKey.pub",
+    "private_key_path": "~/.ssh/cloudKey",
+    "wait_for_guest_net_timeout": 2,
+    "username": "ubuntu",
+    "netplanFile": "/etc/netplan/50-cloud-init.yaml"
+  },
+  "vcenter": {
+    "iso_source_location": "/home/ubuntu/bin/VMware-VCSA-all-7.0.3-18778458.iso",
+    "json_config_file": "vcsa-cli-installer/templates/install/vCSA_with_cluster_on_ESXi.json",
+    "datacenter": "dc1",
+    "cluster": "cluster1",
+    "cache_disk": "mpx.vmhba0:C0:T1:L0",
+    "capacity_disk": "mpx.vmhba0:C0:T2:L0",
+    "thin_disk_mode": true,
+    "deployment_option": "small",
+    "name": "vcsa-01",
+    "ssh_enable": true,
+    "sso": {
+      "domain_name": "domain.local"
+    },
+    "ceip_enabled": false,
+    "dvs" : {
+      "basename": "dvs",
+      "single_vds": false,
+      "mtu": 1500,
+      "discovery_protocol": "lldp",
+      "version": "7.0.2",
+      "portgroup": {
+        "management": {
+          "name": "management",
+          "vlan": 0,
+          "netmask": "255.255.252.0",
+          "prefix": "22",
+          "gateway": "10.41.132.1",
+          "esxi_ips": ["10.41.134.131", "10.41.134.132", "10.41.134.133"],
+          "esxi_ips_temp": ["10.41.134.136", "10.41.134.137", "10.41.134.138"],
+          "vcenter_ip": "10.41.134.135",
+          "dns_ntp_ip": "10.41.134.134",
+          "external_gw_ip": "10.41.134.140",
+          "nsx_ip": "10.41.134.136",
+          "nsx_vip": "10.41.134.137",
+          "nsx_edge": "10.41.134.138",
+          "avi_ips": ["10.41.134.139"],
+          "ssh_gw_ip": "10.41.134.141",
+          "avi_app_ips": ["10.41.134.142", "10.41.134.143"]
+        },
+        "VMotion": {
+          "name": "VMotion",
+          "vlan": 100,
+          "esxi_ips": ["100.64.133.11", "100.64.133.12", "100.64.133.13"],
+          "netmask": "255.255.255.0",
+          "prefix": "24"
+        },
+        "VSAN": {
+          "name": "VSAN",
+          "vlan": 110,
+          "esxi_ips": ["100.64.132.11", "100.64.132.12", "100.64.132.13"],
+          "netmask": "255.255.255.0",
+          "prefix": "24"
+        },
+        "nsx_overlay": {
+          "name": "nsx-overlay-vds",
+          "vlan": 200,
+          "max_mtu": 1600
+        },
+        "nsx_external": {
+          "name": "nsx-external-vds",
+          "vlan": 200,
+          "max_mtu": 1600,
+          "netmask": "255.255.255.0",
+          "prefix": "24",
+          "external_gw_ip": "172.16.100.100"
+        },
+        "avi_mgmt": {
+          "name": "avi_mgmt",
+          "avi_ips": ["100.64.134.11", "100.64.134.12", "100.64.134.13"],
+          "ssh_gw_ip": "100.64.134.250",
+          "prefix": "24"
+        },
+        "avi_vip": {
+          "name": "avi_vip",
+          "prefix": "24",
+          "ssh_gw_ip": "100.64.135.250"
+        },
+        "avi_backend": {
+          "name": "avi_backend",
+          "avi_app_ips": ["100.64.136.251", "100.64.136.252"],
+          "prefix": "24",
+          "ssh_gw_ip": "100.64.136.250"
+        }
+      }
+    },
+    "avi_users": {
+      "create": false,
+      "file": "attendees.txt"
+    }
+  },
+  "nsx": {
+    "networks": {
+      "create": true
+    },
+    "content_library": {
+      "create": true,
+      "ova_location": "/home/ubuntu/bin/nsx-unified-appliance-3.2.0.0.0.19067081.ova"
+    },
+    "manager" : {
+      "create": true,
+      "deployment": "Medium",
+      "basename": "nsx-manager",
+      "role": "NSX Manager"
+    },
+    "config": {
+      "create": true,
+      "ip_pools": [
+        {
+          "name": "ip_pool_tep",
+          "cidr": "10.8.1.32/27",
+          "gateway": "10.8.1.33",
+          "start": "10.8.1.34",
+          "end": "10.8.1.62"
+        }
+      ],
+      "uplink_profiles": [
+        {
+          "name": "uplink-profile-default",
+          "mtu": 8700,
+          "teaming": {
+            "policy": "LOADBALANCE_SRCID",
+            "active_list": [
+              {
+                "uplink_name": "uplink-1",
+                "uplink_type": "PNIC"
+              }
+            ]
+          }
+        }
+      ],
+      "transport_zones": [
+        {
+          "name": "tz_overlay",
+          "type": "OVERLAY"
+        },
+        {
+          "name": "tz_vlan",
+          "type": "VLAN"
+        }
+      ],
+      "segments": [
+        {
+          "name": "segment1",
+          "vlan": "200, 250, 260",
+          "transport_zone": "tz2",
+          "description": "Segment configured as Trunk, used for NSX Edge Nodes external connectivity"
+        },
+        {
+          "name": "segment2",
+          "vlan": "200, 250, 260",
+          "transport_zone": "tz2",
+          "description": "Segment configured as Trunk, used for NSX Edge Nodes external connectivity"
+        },
+        {
+          "name": "external_segment",
+          "vlan": "1-4092",
+          "transport_zone": "tz2",
+          "description": "Segment configured as Trunk, used for NSX Edge Nodes external connectivity"
+        }
+      ],
+      "transport_node_profiles": [
+        {
+          "name": "tnp-cluster",
+          "description": "descr1",
+          "switch": [
+            {
+              "name": "nsx-overlay-vds",
+              "mode": "STANDARD",
+              "type": "VDS",
+              "uplink_profile_name": "uplink_profile_default",
+              "ip_pool_name": "ip_pool_tep",
+              "uplinks": [
+                {
+                  "uplink_name": "uplink-1",
+                  "vds_uplink_name": "uplink1"
+                }
+              ],
+              "transport_zones": [
+                "tz_overlay"
+              ]
+            },
+            {
+              "name": "nsx-external-vds",
+              "mode": "STANDARD",
+              "type": "VDS",
+              "uplink_profile_name": "uplink_profile_default",
+              "uplinks": [
+                {
+                  "uplink_name": "uplink-1",
+                  "vds_uplink_name": "uplink1"
+                }
+              ],
+              "transport_zones": [
+                "tz_vlan"
+              ]
+            }
+          ]
+        }
+      ],
+      "edge_node":
+      {
+        "count": 1,
+        "basename": "edge-",
+        "cpu": 4,
+        "memory": 8192,
+        "disk": 200,
+        "data_network": "segment2",
+        "host_switch_spec": {
+          "host_switches" : [
+            {
+              "host_switch_name": "switch_overlay",
+              "host_switch_type": "NVDS",
+              "host_switch_mode": "STANDARD",
+              "host_switch_profile_names": [
+                "uplink-profile-default"
+              ],
+              "pnics": [
+                {
+                  "device_name": "fp-eth0",
+                  "uplink_name": "uplink1"
+                }
+              ],
+              "ip_assignment_spec": {
+                "ip_pool_name": "ip_pool_tep",
+                "resource_type": "StaticIpPoolSpec"
+              },
+              "transport_zone_endpoints": [
+                {
+                  "transport_zone_name": "tz_overlay"
+                }
+              ]
+            },
+            {
+              "host_switch_name": "switch_external",
+              "host_switch_type": "NVDS",
+              "host_switch_mode": "STANDARD",
+              "host_switch_profile_names": [
+                "uplink-profile-default"
+              ],
+              "pnics": [
+                {
+                  "device_name": "fp-eth1",
+                  "uplink_name": "uplink2"
+                }
+              ],
+              "transport_zone_endpoints": [
+                {
+                  "transport_zone_name": "tz_vlan"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "avi": {
+    "networks": {
+      "create": false
+    },
+    "content_library": {
+      "create": false,
+      "ova_location": "/home/ubuntu/bin/controller-21.1.1-9045.ova"
+    },
+    "controller": {
+      "create": false,
+      "cpu": 8,
+      "memory": 24768,
+      "disk": 128,
+      "basename": "avi-controller"
+    },
+    "config": {
+      "create": false
+      },
+    "app": {
+      "create": false,
+      "ova_location": "/home/ubuntu/bin/focal-server-cloudimg-amd64.ova",
+      "cpu": 4,
+      "memory": 8192,
+      "disk": 32,
+      "public_key_path": "~/.ssh/cloudKey.pub",
+      "private_key_path": "~/.ssh/cloudKey",
+      "username": "ubuntu",
+      "netplan_file": "/etc/netplan/50-cloud-init.yaml",
+      "resource_pool": "avi_app",
+      "avi_app_docker_image": "tacobayle/avi_app",
+      "avi_app_tcp_port": "8080",
+      "hackazon_docker_image": "mutzel/all-in-one-hackazon:postinstall",
+      "hackazon_tcp_port": "8081"
+    }
+  },
+  "ssh_gw": {
+    "create": false,
+    "ova_location": "/home/ubuntu/bin/focal-server-cloudimg-amd64.ova",
+    "cpu": 4,
+    "memory": 8192,
+    "disk": 32,
+    "public_key_path": "~/.ssh/cloudKey.pub",
+    "private_key_path": "~/.ssh/cloudKey",
+    "username": "ubuntu",
+    "netplan_file": "/etc/netplan/50-cloud-init.yaml"
+  }
+}
