@@ -1,5 +1,36 @@
 # git
 
+## git location
+git-scm.com
+
+## git config
+
+- system level: /etc/gitconfig
+- user level: ~/.gitconfig
+- project level: /project/.git/config
+
+## git three directories:
+
+- commit directory
+- staging directory
+- working directory
+
+## git diff to see differences between staging directory and working directory
+
+## git show to see the last change
+
+## revert a file before an old commit
+
+- check the commit history: git log
+- use ```git checkout <sha> -- file.txt``` 
+
+## revert a commit
+
+- ```git revert <sha>```
+
+
+##  git diff sha..sha (to compare codes at different point of time)
+
 ## delete branch locally
 git branch -d awsAsgGslb
 
