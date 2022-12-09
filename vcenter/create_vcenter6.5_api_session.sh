@@ -15,7 +15,7 @@ while true ; do
   if [[ $2 == '' ]]; then
     response=$(curl -k -s --write-out "\n%{http_code}" -X POST -u "$1:$3" https://$4/rest/com/vmware/cis/session -H "Content-Type: application/json")
   else
-    response=$(curl -k -s --write-out "\n%{http_code}" -X POST -u "$1@$2:$3" https://$4/api/session -H "Content-Type: application/json")
+    response=$(curl -k -s --write-out "\n%{http_code}" -X POST -u "$1@$2:$3" https://$4/rest/com/vmware/cis/session -H "Content-Type: application/json")
   fi
   http_code=$(tail -n1 <<< "$response")
   content=$(sed '$ d' <<< "$response")
