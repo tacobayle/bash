@@ -129,3 +129,32 @@ function tacoGitInit () {
   git remote add origin $1
 }
 ```
+
+
+## change git config
+
+git config --local remote.origin.url git@github.com:tacobayle/nestedVsphere8
+
+
+## update ~/.ssh/config
+
+```
+Host github.com
+  User git
+  Hostname github.com
+  IdentityFile ~/creds/git/id_rsa_git
+```
+
+```
+git config --global user.email nicolas.bayle@gmail.com
+git config --global user.name tacobayle
+```
+
+```
+git remote remove origin
+git remote add origin git@github.com:tacobayle/aviAws.git
+```
+
+## git clone a specific branch
+
+git clone -b dual_attached https://github.com/tacobayle/nestedVsphere8
