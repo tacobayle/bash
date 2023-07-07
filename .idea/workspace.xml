@@ -5,56 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f22e6877-b819-463a-8a9b-469bfd5f1555" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/bash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bash.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_network_delay/delay.sh" beforeDir="false" afterPath="$PROJECT_DIR$/add_network_delay/delay.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/docker_mac.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/git/git.md" beforeDir="false" afterPath="$PROJECT_DIR$/git/git.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/if_file/empty_file" beforeDir="false" afterPath="$PROJECT_DIR$/if_file/empty_file" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/if_file/if_file_exists.sh" beforeDir="false" afterPath="$PROJECT_DIR$/if_file/if_file_exists.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/if_file/if_file_is_empty.sh" beforeDir="false" afterPath="$PROJECT_DIR$/if_file/if_file_is_empty.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/if_variables/if_variable_is_cidr.sh" beforeDir="false" afterPath="$PROJECT_DIR$/if_variables/if_variable_is_cidr.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/if_variables/if_variable_is_empty.sh" beforeDir="false" afterPath="$PROJECT_DIR$/if_variables/if_variable_is_empty.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/if_variables/if_variable_is_ip.sh" beforeDir="false" afterPath="$PROJECT_DIR$/if_variables/if_variable_is_ip.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/.var" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/.var" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/ako_versions.json" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/ako_versions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/apply.sh" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/apply.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/avi_versions.json" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/avi_versions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/booleans.json" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/booleans.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/cnis.json" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/cnis.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/destroyAvi.sh" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/destroyAvi.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/docker_vars.json" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/docker_vars.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/ntp_vars.json" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/ntp_vars.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/required_vars.json" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/required_vars.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/run.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/static_vars.json" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/static_vars.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_read/svc_types.json" beforeDir="false" afterPath="$PROJECT_DIR$/input_read/svc_types.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install_docker/installDocker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/install_docker/installDocker.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ip_examples/getMyPrimaryIp.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ip_examples/getMyPrimaryIp.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ip_examples/getMyPrimaryIp2.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ip_examples/getMyPrimaryIp2.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ip_examples/prefix_from_mask.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ip_examples/prefix_from_mask.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/create_list.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq/create_list.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/variables.json" beforeDir="false" afterPath="$PROJECT_DIR$/jq/variables.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsx/curl_nsxt.sh" beforeDir="false" afterPath="$PROJECT_DIR$/nsx/curl_nsxt.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nsx/register_compute_manager.sh" beforeDir="false" afterPath="$PROJECT_DIR$/nsx/register_compute_manager.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest_api/wait_for_http_200.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rest_api/wait_for_http_200.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_command_function/retry_command_function.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_command_function/retry_command_function.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_command_function/retry_command_function_test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_command_function/retry_command_function_test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_command_function/run_command_function.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_command_function/run_command_function.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_command_function/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run_command_function/test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/samba/samba.sh" beforeDir="false" afterPath="$PROJECT_DIR$/samba/samba.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sed/replace.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sed/replace.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sed/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sed/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssl_cert/display_cert.sh" beforeDir="false" afterPath="$PROJECT_DIR$/ssl_cert/display_cert.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/until_dns_works/dns.sh" beforeDir="false" afterPath="$PROJECT_DIR$/until_dns_works/dns.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vcenter/get_cluster.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vcenter/get_cluster.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vcenter/get_datastore.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vcenter/get_datastore.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vcenter/get_dc.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vcenter/get_dc.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vcenter/get_dc.sh.old" beforeDir="false" afterPath="$PROJECT_DIR$/vcenter/get_dc.sh.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vcenter/get_network.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vcenter/get_network.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vcenter/get_vcenter.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vcenter/get_vcenter.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

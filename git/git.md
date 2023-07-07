@@ -133,8 +133,10 @@ function tacoGitInit () {
 
 ## change git config
 
+```
+git config --local -l
 git config --local remote.origin.url git@github.com:tacobayle/nestedVsphere8
-
+```
 
 ## update ~/.ssh/config
 
