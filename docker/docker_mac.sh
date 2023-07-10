@@ -9,3 +9,13 @@ DockerDestroyTfAviGcp () {
   docker rm -f tfAviGcp_container
   docker volume rm tfAviGcp_Volume
 }
+
+DockerCreate04_aws () {
+  docker volume create --name 04_aws_Volume --opt type=none --opt device=/Users/nbayle/git/aviArchitectureWorkshop/day1/04_aws --opt o=bind
+  docker run -it --name 04_aws_container --mount source=04_aws_Volume,target=/opt/04_aws -e AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY -e AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION tacobayle/ubuntu-automation1 /bin/bash
+}
+
+DockerDestroy04_aws () {
+  docker rm -f 04_aws_container
+  docker volume rm 04_aws_Volume
+}
