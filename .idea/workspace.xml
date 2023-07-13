@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f22e6877-b819-463a-8a9b-469bfd5f1555" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/macos_socks/socks.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/change_json_multiple_times.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker_mac.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker_mac.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/git.md" beforeDir="false" afterPath="$PROJECT_DIR$/git/git.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
