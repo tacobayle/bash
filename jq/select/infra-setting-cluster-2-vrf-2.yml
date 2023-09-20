@@ -1,0 +1,16 @@
+apiVersion: ako.vmware.com/v1alpha1
+kind: AviInfraSetting
+metadata:
+  name: infra-setting-2
+spec:
+  seGroup:
+    name: tkg-cluster-workload-2
+  network:
+    vipNetworks:
+      - networkName: nsx-external-pg
+        cidr: 2.2.2.0/24
+    enableRhi: true
+    bgpPeerLabels:
+      - vrf-2
+  l7Settings:
+    shardSize: MEDIUM
