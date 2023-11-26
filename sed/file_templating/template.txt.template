@@ -1,2 +1,3 @@
 The number is ${i}
 The word is ${word}
+Date of the day is: ${date}

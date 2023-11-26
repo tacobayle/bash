@@ -7,9 +7,9 @@
     <list default="true" id="f22e6877-b819-463a-8a9b-469bfd5f1555" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/jq/concatenate_list.sh" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/jq/read_json_list.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sed/file_templating/sed.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sed/file_templating/template.txt.template" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sed/file_templating/sed.sh" beforeDir="false" afterPath="$PROJECT_DIR$/sed/file_templating/sed.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sed/file_templating/template.txt.template" beforeDir="false" afterPath="$PROJECT_DIR$/sed/file_templating/template.txt.template" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
