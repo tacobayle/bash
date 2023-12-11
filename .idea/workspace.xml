@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f22e6877-b819-463a-8a9b-469bfd5f1555" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jq/top_level_keys.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generate_random_string_password/password.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/data/vsphere_nsx_tanzu_alb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/data/vsphere_tanzu_alb_wo_nsx.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/if_key_exist_in_each_item.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/if_list_contains_ip.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/ip.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/jq_check_values_against_another_list.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/jq_has.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/lib.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jq/uniq.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
