@@ -5,35 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f22e6877-b819-463a-8a9b-469bfd5f1555" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jq-yq/data/secrets.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jq-yq/update_yaml_multiple_docs.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openssl/create_ca_cert.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tcpdump/tcpdump.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ssh/create-key.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/change_json_multiple_times.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/change_json_multiple_times.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/concatenate_list.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/concatenate_list.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/create_list.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/create_list.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/data/supervisor_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/data/supervisor_test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/data/vsphere_nsx_tanzu_alb.json" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/data/vsphere_nsx_tanzu_alb.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/data/vsphere_tanzu_alb_wo_nsx.json" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/data/vsphere_tanzu_alb_wo_nsx.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/if_key_exist_in_each_item.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/if_key_exist_in_each_item.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/if_list_contains_ip.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/if_list_contains_ip.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/ip.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/ip.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/jq.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/jq.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/jq_check_values_against_another_list.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/jq_check_values_against_another_list.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/jq_has.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/jq_has.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/lib.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/lib.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/list_slicing.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/list_slicing.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/read_json_list.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/read_json_list.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/select/infra-setting-cluster-1-vrf-1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/select/infra-setting-cluster-1-vrf-1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/select/infra-setting-cluster-1-vrf-2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/select/infra-setting-cluster-1-vrf-2.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/select/infra-setting-cluster-2-vrf-1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/select/infra-setting-cluster-2-vrf-1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/select/infra-setting-cluster-2-vrf-2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/select/infra-setting-cluster-2-vrf-2.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/select/select.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/select/select.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/select/variables.json" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/select/variables.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/top_level_keys.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/top_level_keys.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/uniq.sh" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/uniq.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jq/variables.json" beforeDir="false" afterPath="$PROJECT_DIR$/jq-yq/variables.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
