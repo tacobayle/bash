@@ -1,0 +1,11 @@
+Host github.com
+  User git
+  Hostname github.com
+  IdentityFile ~/creds/git/id_rsa_git
+Host gitrunner
+  IdentityFile  /Users/nbayle/creds/ssh/workshop.pem
+  Hostname 10.0.2.107
+  User ubuntu
+  ForwardAgent yes
+  User ec2-user
+  ProxyCommand ssh -W %h:%p -i /Users/nbayle/creds/ssh/workshop.pem ec2-user@bastion-europe.academy.demoavi.us
